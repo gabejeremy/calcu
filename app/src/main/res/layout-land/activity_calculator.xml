@@ -6,8 +6,8 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="726dp"
+        android:layout_height="434dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,7 +24,7 @@
             <EditText
                 android:id="@+id/tvResult"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="67dp"
                 android:paddingHorizontal="15dp"
                 android:paddingVertical="35dp"
                 android:text=" "
@@ -35,7 +35,7 @@
             <EditText
                 android:id="@+id/tvSolution"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="66dp"
                 android:paddingHorizontal="15dp"
                 android:paddingVertical="35dp"
                 android:text=""
@@ -45,14 +45,26 @@
 
             <TableLayout
                 android:id="@+id/tableLayout"
-                android:layout_width="386dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp">
 
                 <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="335dp"
+                    android:layout_height="57dp"
                     android:layout_gravity="center">
+
+                    <Button
+                        android:id="@+id/calcAC"
+                        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_margin="12dp"
+                        android:backgroundTint="#AF69EE"
+                        android:text="AC"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        app:cornerRadius="36dp" />
 
                     <Button
                         android:id="@+id/calcC"
@@ -102,11 +114,59 @@
                         android:textSize="32dp"
                         app:cornerRadius="36dp" />
 
+                    <Button
+                        android:id="@+id/calcMult"
+                        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_margin="12dp"
+                        android:backgroundTint="#FFA500"
+                        android:text="*"
+                        android:textColor="@color/white"
+                        android:textSize="32dp"
+                        app:cornerRadius="36dp" />
+
+                    <Button
+                        android:id="@+id/calcMin"
+                        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_margin="12dp"
+                        android:backgroundTint="#FFA500"
+                        android:text="-"
+                        android:textColor="@color/white"
+                        android:textSize="32dp"
+                        app:cornerRadius="36dp" />
+
                 </TableRow>
 
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/calcFive"
+                        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_margin="12dp"
+                        android:backgroundTint="#0096C7"
+                        android:text="5"
+                        android:textColor="@color/white"
+                        android:textSize="32dp"
+                        app:cornerRadius="36dp" />
+
+                    <Button
+                        android:id="@+id/calcSix"
+                        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_margin="12dp"
+                        android:backgroundTint="#0096C7"
+                        android:text="6"
+                        android:textColor="@color/white"
+                        android:textSize="32dp"
+                        app:cornerRadius="36dp" />
 
                     <Button
                         android:id="@+id/calcSeven"
@@ -145,13 +205,13 @@
                         app:cornerRadius="36dp" />
 
                     <Button
-                        android:id="@+id/calcMult"
+                        android:id="@+id/calcAdd"
                         style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                         android:layout_width="72dp"
                         android:layout_height="72dp"
                         android:layout_margin="12dp"
                         android:backgroundTint="#FFA500"
-                        android:text="*"
+                        android:text="+"
                         android:textColor="@color/white"
                         android:textSize="32dp"
                         app:cornerRadius="36dp" />
@@ -163,58 +223,16 @@
                     android:layout_height="wrap_content">
 
                     <Button
-                        android:id="@+id/calcFour"
+                        android:id="@+id/calcZero"
                         style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                         android:layout_width="72dp"
                         android:layout_height="72dp"
                         android:layout_margin="12dp"
                         android:backgroundTint="#0096C7"
-                        android:text="4"
+                        android:text="0"
                         android:textColor="@color/white"
                         android:textSize="32dp"
                         app:cornerRadius="36dp" />
-
-                    <Button
-                        android:id="@+id/calcFive"
-                        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                        android:layout_width="72dp"
-                        android:layout_height="72dp"
-                        android:layout_margin="12dp"
-                        android:backgroundTint="#0096C7"
-                        android:text="5"
-                        android:textColor="@color/white"
-                        android:textSize="32dp"
-                        app:cornerRadius="36dp" />
-
-                    <Button
-                        android:id="@+id/calcSix"
-                        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                        android:layout_width="72dp"
-                        android:layout_height="72dp"
-                        android:layout_margin="12dp"
-                        android:backgroundTint="#0096C7"
-                        android:text="6"
-                        android:textColor="@color/white"
-                        android:textSize="32dp"
-                        app:cornerRadius="36dp" />
-
-                    <Button
-                        android:id="@+id/calcMin"
-                        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                        android:layout_width="72dp"
-                        android:layout_height="72dp"
-                        android:layout_margin="12dp"
-                        android:backgroundTint="#FFA500"
-                        android:text="-"
-                        android:textColor="@color/white"
-                        android:textSize="32dp"
-                        app:cornerRadius="36dp" />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
 
                     <Button
                         android:id="@+id/calcOne"
@@ -253,43 +271,13 @@
                         app:cornerRadius="36dp" />
 
                     <Button
-                        android:id="@+id/calcAdd"
-                        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                        android:layout_width="72dp"
-                        android:layout_height="72dp"
-                        android:layout_margin="12dp"
-                        android:backgroundTint="#FFA500"
-                        android:text="+"
-                        android:textColor="@color/white"
-                        android:textSize="32dp"
-                        app:cornerRadius="36dp" />
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <Button
-                        android:id="@+id/calcAC"
-                        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                        android:layout_width="72dp"
-                        android:layout_height="72dp"
-                        android:layout_margin="12dp"
-                        android:backgroundTint="#AF69EE"
-                        android:text="AC"
-                        android:textColor="@color/white"
-                        android:textSize="15dp"
-                        app:cornerRadius="36dp" />
-
-                    <Button
-                        android:id="@+id/calcZero"
+                        android:id="@+id/calcFour"
                         style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                         android:layout_width="72dp"
                         android:layout_height="72dp"
                         android:layout_margin="12dp"
                         android:backgroundTint="#0096C7"
-                        android:text="0"
+                        android:text="4"
                         android:textColor="@color/white"
                         android:textSize="32dp"
                         app:cornerRadius="36dp" />
@@ -317,6 +305,18 @@
                         android:textColor="@color/white"
                         android:textSize="32dp"
                         app:cornerRadius="36dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
                 </TableRow>
             </TableLayout>
